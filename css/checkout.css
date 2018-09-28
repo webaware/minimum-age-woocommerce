@@ -1,18 +1,25 @@
 /* Minimum Age for WooCommerce */
 
-.min-age-woo-field {
-	width: 15%;
-	float: left;
+.woocommerce #min-age-woo-ask-dob
+{
+	display: flex;
+	flex-wrap: wrap;
+	width:100%;
 }
 
-.woocommerce form .form-row.min-age-woo-field .input-text {
+.woocommerce #min-age-woo-ask-dob h3,
+.woocommerce #min-age-woo-ask-dob p
+{
+	flex: 0 0 100%;
+}
+
+.woocommerce #min-age-woo-ask-dob p.form-row.min-age-woo-field
+{
+	flex: 0 0 auto;
+	margin-right: 1em;
+}
+
+.woocommerce form .form-row.min-age-woo-field .input-text
+{
 	width: 5em;
-}
-
-@media only screen and (max-width: 768px) {
-
-	.min-age-woo-field {
-		width: 30%;
-	}
-
 }
