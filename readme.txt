@@ -1,6 +1,6 @@
-# Minimum Age WooCommerce
+# Minimum Age for WooCommerce
 Contributors: webaware
-Plugin Name: Minimum Age WooCommerce
+Plugin Name: Minimum Age for WooCommerce
 Plugin URI: https://wordpress.org/plugins/minimum-age-woocommerce/
 Author URI: https://shop.webaware.com.au/
 Donate link: https://shop.webaware.com.au/donations/?donation_for=Minimum+Age+for+WooCommerce
@@ -8,7 +8,7 @@ Tags: woocommerce, checkout, age
 Requires at least: 4.2
 Tested up to: 4.9
 Requires PHP: 5.4
-Stable tag: 0.0.1
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,6 @@ The full changelog can be found [on GitHub](https://github.com/webaware/minimum-
 
 ### 1.0.0
 
-Soon...
+Released 2018-09-29
 
 * initial public release

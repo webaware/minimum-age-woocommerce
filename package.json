@@ -1,7 +1,7 @@
 {
 	"name": "minimum-age-woocommerce",
-	"version": "0.0.1",
-	"description": "Minimum Age WooCommerce",
+	"version": "1.0.0",
+	"description": "Minimum Age for WooCommerce",
 	"main": "Gruntfile.js",
 	"browsers": [
 		"> 0.5%",
