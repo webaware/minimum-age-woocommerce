@@ -52,8 +52,7 @@ WooCommerce > Settings > Minimum Age
 ## Screenshots
 
 1. WooCommerce settings
-2. The birth date question in the checkout
-3. A sample error message when the customer's age is below the minimum
+2. The birth date question in the checkout, showing an error message
 
 ## Changelog
 
