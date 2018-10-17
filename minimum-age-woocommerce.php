@@ -32,8 +32,8 @@ if (!defined('ABSPATH')) {
 }
 
 define('MIN_AGE_WOO_FILE', __FILE__);
-define('MIN_AGE_WOO_ROOT', __DIR__ . '/');
-define('MIN_AGE_WOO_NAME', basename(__DIR__) . '/' . basename(__FILE__));
+define('MIN_AGE_WOO_ROOT', dirname(__FILE__) . '/');
+define('MIN_AGE_WOO_NAME', basename(dirname(__FILE__)) . '/' . basename(__FILE__));
 define('MIN_AGE_WOO_MIN_PHP', '5.4');
 define('MIN_AGE_WOO_VERSION', '1.0.0');
 
