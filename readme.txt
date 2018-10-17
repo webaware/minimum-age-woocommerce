@@ -8,7 +8,7 @@ Tags: woocommerce, checkout, age
 Requires at least: 4.2
 Tested up to: 4.9
 Requires PHP: 5.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,12 +54,18 @@ WooCommerce > Settings > Minimum Age
 1. WooCommerce settings
 2. The birth date question in the checkout, showing an error message
 
+## Upgrade Notice
+
+### 1.0.1
+
+marked as tested up to WooCommerce 3.5
+
 ## Changelog
 
 The full changelog can be found [on GitHub](https://github.com/webaware/minimum-age-woocommerce/blob/master/changelog.md). Recent entries:
 
-### 1.0.0
+### 1.0.1
 
-Released 2018-09-29
+Released 2018-10-17
 
-* initial public release
+* changed: marked as tested up to WooCommerce 3.5
