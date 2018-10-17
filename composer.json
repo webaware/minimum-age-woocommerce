@@ -1,0 +1,11 @@
+{
+	"require-dev": {
+		"phpcompatibility/php-compatibility": "*",
+		"squizlabs/php_codesniffer": "*"
+	},
+	"scripts": {
+		"lint": "php -l minimum-age-woocommerce.php; find includes views -name '*.php' -exec php -l '{}' \\;",
+		"sniff": "phpcs -ps --colors"
+	},
+	"prefer-stable" : true
+}
