@@ -6,9 +6,9 @@ Author URI: https://shop.webaware.com.au/
 Donate link: https://shop.webaware.com.au/donations/?donation_for=Minimum+Age+for+WooCommerce
 Tags: woocommerce, checkout, age
 Requires at least: 4.2
-Tested up to: 4.9
+Tested up to: 5.0
 Requires PHP: 5.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -56,9 +56,9 @@ WooCommerce > Settings > Minimum Age
 
 ## Upgrade Notice
 
-### 1.0.1
+### 1.0.2
 
-marked as tested up to WooCommerce 3.5
+fixed PHP compatibility message not compatible with PHP < 5.4, tested with WordPress 5.0
 
 ## Changelog
 
@@ -66,6 +66,8 @@ The full changelog can be found [on GitHub](https://github.com/webaware/minimum-
 
 ### 1.0.1
 
-Released 2018-10-17
+### 1.0.2
 
-* changed: marked as tested up to WooCommerce 3.5
+Released 2018-11-05
+
+* irony: view for PHP compatibility message used short echo tags not compatible with PHP < 5.4
