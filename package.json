@@ -1,15 +1,15 @@
 {
 	"name": "minimum-age-woocommerce",
-	"version": "1.0.2",
+	"version": "1.0.3-dev",
 	"description": "Minimum Age for WooCommerce",
 	"main": "Gruntfile.js",
 	"browsers": [
 		"> 0.5%",
-		"ios >= 9.3",
+		"ios >= 9.3.5",
 		"not dead"
 	],
 	"devDependencies": {
-		"grunt": "^1.0.3",
+		"grunt": "^1.0.4",
 		"grunt-contrib-clean": "^2.0.0",
 		"grunt-contrib-compress": "^1.4.3",
 		"grunt-contrib-copy": "^1.0.0"
