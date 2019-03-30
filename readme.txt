@@ -41,13 +41,13 @@ The customer's date of birth is recorded, so that transactions can be audited fo
 
 The default minimum age is 18. You can change it the WooCommerce settings:
 
-WooCommerce > Settings > Minimum Age
+WooCommerce > Settings > Minimum Age > Minimum age
 
 ### How can I change the order of the date fields?
 
 The default order of the birth date fields is day, month, year. You can choose a different layout in the settings:
 
-WooCommerce > Settings > Minimum Age
+WooCommerce > Settings > Minimum Age > Date layout
 
 ## Screenshots
 
@@ -63,8 +63,6 @@ fixed PHP compatibility message not compatible with PHP < 5.4, tested with WordP
 ## Changelog
 
 The full changelog can be found [on GitHub](https://github.com/webaware/minimum-age-woocommerce/blob/master/changelog.md). Recent entries:
-
-### 1.0.1
 
 ### 1.0.2
 
