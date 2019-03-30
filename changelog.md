@@ -3,6 +3,7 @@
 ### 1.0.3, soon...
 
 * changed: requires minimum PHP version of 5.6
+* tested: compatible with WooCommerce 3.6
 
 ### 1.0.2, 2018-11-05
 
