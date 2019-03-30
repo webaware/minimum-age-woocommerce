@@ -7,7 +7,7 @@ Donate link: https://shop.webaware.com.au/donations/?donation_for=Minimum+Age+fo
 Tags: woocommerce, checkout, age
 Requires at least: 4.2
 Tested up to: 5.0
-Requires PHP: 5.4
+Requires PHP: 5.6
 Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -21,7 +21,7 @@ Add a checkout question for the customer's date of birth, and enforce a minimum 
 ### Requirements
 
 * WooCommerce 3.0 or greater
-* PHP 5.4 or greater
+* PHP 5.6 or greater
 
 ### Translations
 
