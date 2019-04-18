@@ -1,6 +1,6 @@
 {
 	"name": "minimum-age-woocommerce",
-	"version": "1.0.3-dev",
+	"version": "1.0.3",
 	"description": "Minimum Age for WooCommerce",
 	"main": "Gruntfile.js",
 	"browsers": [
@@ -20,5 +20,5 @@
 	},
 	"author": "WebAware https://shop.webaware.com.au/",
 	"license": "GPL-2.0",
-	"homepage": "https://wordpress.org/plugins/minimum-age-woocommerce/"
+	"homepage": "https://shop.webaware.com.au/downloads/minimum-age-for-woocommerce/"
 }
