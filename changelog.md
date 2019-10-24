@@ -1,5 +1,9 @@
 # Minimum Age for WooCommerce
 
+### 1.0.5, 2019-10-24
+
+* tested: compatible with WooCommerce 3.8
+
 ### 1.0.4, 2019-08-12
 
 * tested: compatible with WooCommerce 3.7
