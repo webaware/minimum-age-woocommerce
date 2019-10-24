@@ -27,5 +27,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks("grunt-shell");
 
 	grunt.registerTask("release", ["shell:dist"]);
+	grunt.registerTask("wpsvn", ["shell:wpsvn"]);
 
 };
