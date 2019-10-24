@@ -1,5 +1,5 @@
-.svn
-.vscode
-dist
-node_modules
-vendor
+/.svn
+/.vscode
+/.dist
+/node_modules
+/vendor
