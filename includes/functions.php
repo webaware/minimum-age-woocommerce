@@ -16,15 +16,6 @@ const SETTING_MIN_AGE				= 'min_age_woo_min_age';
 const SETTING_DATE_LAYOUT			= 'min_age_woo_date_layout';
 
 /**
-* show admin notice that WooCommerce needs upgrading
-*/
-function notice_woocommerce_version() {
-	if (min_age_woo_can_show_admin_notices()) {
-		include MIN_AGE_WOO_ROOT . 'views/requires-woocommerce-version.php';
-	}
-}
-
-/**
 * get setting default value
 * @param string $setting
 * @return string

@@ -40,6 +40,7 @@ define('MIN_AGE_WOO_MIN_PHP', '5.6');
 define('MIN_AGE_WOO_VERSION', '1.0.6');
 
 require MIN_AGE_WOO_ROOT . 'includes/functions-global.php';
+require MIN_AGE_WOO_ROOT . 'includes/class.Requires.php';
 
 if (version_compare(PHP_VERSION, MIN_AGE_WOO_MIN_PHP, '<')) {
 	add_action('admin_notices', 'min_age_woo_fail_php_version');

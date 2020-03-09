@@ -9,30 +9,22 @@ if (!defined('ABSPATH')) {
 * maybe show notice of minimum PHP version failure
 */
 function min_age_woo_fail_php_version() {
-	if (min_age_woo_can_show_admin_notices()) {
-		min_age_woo_load_text_domain();
-		include MIN_AGE_WOO_ROOT . 'views/requires-php.php';
-	}
-}
+	min_age_woo_load_text_domain();
 
-/**
-* test whether we can show admin-related notices
-* @return bool
-*/
-function min_age_woo_can_show_admin_notices() {
-	global $pagenow, $hook_suffix;
+	$requires = new MinAgeWooRequires();
 
-	// only on specific pages
-	if ($pagenow !== 'plugins.php' && $hook_suffix !== 'woocommerce_page_wc-settings') {
-		return false;
-	}
-
-	// only bother admins / plugin installers / option setters with this stuff
-	if (!current_user_can('activate_plugins') && !current_user_can('manage_options')) {
-		return false;
-	}
-
-	return true;
+	$requires->addNotice(
+		min_age_woo_external_link(
+			/* translators: %1$s: minimum required version number, %2$s: installed version number */
+			sprintf(esc_html__('It requires PHP %1$s or higher; your website has PHP %2$s which is {{a}}old, obsolete, and unsupported{{/a}}.', 'minimum-age-woocommerce'),
+				esc_html(MIN_AGE_WOO_MIN_PHP), esc_html(PHP_VERSION)),
+			'https://www.php.net/supported-versions.php'
+		)
+	);
+	$requires->addNotice(
+		/* translators: %s: minimum recommended version number */
+		sprintf(esc_html__('Please upgrade your website hosting. At least PHP %s is recommended.', 'minimum-age-woocommerce'), '7.3')
+	);
 }
 
 /**

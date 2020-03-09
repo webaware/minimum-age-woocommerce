@@ -1,6 +1,8 @@
 <?php
 namespace webaware\min_age_woo;
 
+use \MinAgeWooRequires as Requires;
+
 if (!defined('ABSPATH')) {
 	exit;
 }
@@ -35,6 +37,7 @@ class Plugin {
 	public function pluginStart() {
 		add_action('init', 'min_age_woo_load_text_domain', 5);
 		add_filter('plugin_row_meta', [$this, 'pluginDetailsLinks'], 10, 2);
+		add_action('admin_init', [$this, 'adminInit'], 5);
 
 		if (!$this->checkPrequisites()) {
 			return;
@@ -43,12 +46,7 @@ class Plugin {
 		require_once MIN_AGE_WOO_ROOT . 'includes/class.Checkout.php';
 		Checkout::getInstance()->addHooks();
 
-		if (is_admin()) {
-			add_action('admin_init', [$this, 'adminInit'], 5);
-			add_filter('woocommerce_get_settings_pages', [$this, 'wooGetSettingsPages']);
-		}
-		else {
-		}
+		add_filter('woocommerce_get_settings_pages', [$this, 'wooGetSettingsPages']);
 	}
 
 	/**
@@ -56,8 +54,21 @@ class Plugin {
 	* @return bool
 	*/
 	public function checkPrequisites() {
-		if (function_exists('WC') && version_compare(WC()->version, MIN_VERSION_WOOCOMMERCE, '<')) {
-			add_action('admin_notices', __NAMESPACE__ . '\\notice_woocommerce_version');
+		$requires = new Requires();
+
+		if (!function_exists('WC')) {
+			$requires->addNotice(
+				esc_html__('Will not function without WooCommerce', 'minimum-age-woocommerce')
+			);
+			return false;
+		}
+
+		if (version_compare(WC()->version, MIN_VERSION_WOOCOMMERCE, '<')) {
+			$requires->addNotice(
+				/* translators: %1$s: minimum required version number, %2$s: installed version number */
+				sprintf(esc_html__('Requires WooCommerce version %1$s or higher; your website has WooCommerce version %2$s', 'minimum-age-woocommerce'),
+				esc_html(MIN_VERSION_WOOCOMMERCE), esc_html(WC()->version))
+			);
 			return false;
 		}
 
