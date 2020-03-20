@@ -8,7 +8,7 @@ Tags: woocommerce, checkout, age
 Requires at least: 4.2
 Tested up to: 5.4
 Requires PHP: 5.6
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,11 +58,17 @@ WooCommerce > Settings > Minimum Age > Date layout
 
 ### 1.0.7
 
-marked as tested up to WooCommerce 4.0
+fixes a fatal error on plugins page when searching for deactivated WooCommerce plugin
 
 ## Changelog
 
 The full changelog can be found [on GitHub](https://github.com/webaware/minimum-age-woocommerce/blob/master/changelog.md). Recent entries:
+
+### 1.0.8
+
+Released 2020-03-20
+
+* fixed: fatal error on plugins page when searching for deactivated WooCommerce plugin
 
 ### 1.0.7
 
