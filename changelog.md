@@ -1,5 +1,9 @@
 # Minimum Age for WooCommerce
 
+### 1.0.9, 2020-05-05
+
+* changed: marked as tested up to WooCommerce 4.1
+
 ### 1.0.8, 2020-03-20
 
 * fixed: fatal error on plugins page when searching for deactivated WooCommerce plugin
