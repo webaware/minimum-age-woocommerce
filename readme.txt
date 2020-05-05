@@ -64,6 +64,8 @@ marked as tested up to WooCommerce 4.1
 
 The full changelog can be found [on GitHub](https://github.com/webaware/minimum-age-woocommerce/blob/master/changelog.md). Recent entries:
 
-### 1.0.9, 2020-05-05
+### 1.0.9
+
+Released 2020-05-05
 
 * changed: marked as tested up to WooCommerce 4.1
