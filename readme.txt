@@ -8,7 +8,7 @@ Tags: woocommerce, checkout, age
 Requires at least: 4.2
 Tested up to: 5.4
 Requires PHP: 5.6
-Stable tag: 1.0.9
+Stable tag: 1.0.10
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -56,16 +56,16 @@ WooCommerce > Settings > Minimum Age > Date layout
 
 ## Upgrade Notice
 
-### 1.0.9
+### 1.0.10
 
-marked as tested up to WooCommerce 4.1
+marked as tested up to WooCommerce 4.2
 
 ## Changelog
 
 The full changelog can be found [on GitHub](https://github.com/webaware/minimum-age-woocommerce/blob/master/changelog.md). Recent entries:
 
-### 1.0.9
+### 1.0.10
 
-Released 2020-05-05
+Released 2020-06-03
 
-* changed: marked as tested up to WooCommerce 4.1
+* changed: marked as tested up to WooCommerce 4.2
