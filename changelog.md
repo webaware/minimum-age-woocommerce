@@ -1,5 +1,9 @@
 # Minimum Age for WooCommerce
 
+### 1.0.11, soon...
+
+* added: filter `mininum_age_woo_checkout_hook` allowing developers to change where the fields show in the checkout
+
 ### 1.0.10, 2020-06-03
 
 * changed: marked as tested up to WooCommerce 4.2

@@ -38,7 +38,9 @@ class Checkout {
 	* add hooks to manage checkout interactions
 	*/
 	public function addHooks() {
-		add_action('woocommerce_checkout_before_customer_details', [$this, 'showQuestion']);
+		$question_hook = apply_filters('mininum_age_woo_checkout_hook', 'woocommerce_checkout_before_customer_details');
+
+		add_action($question_hook, [$this, 'showQuestion']);
 		add_action('woocommerce_checkout_process', [$this, 'confirmAge']);
 		add_action('woocommerce_checkout_update_order_meta', [$this, 'saveAge']);
 		add_action('woocommerce_email_order_meta_fields', [$this, 'showInEmails'], 10, 3);
