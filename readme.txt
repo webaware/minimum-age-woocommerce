@@ -6,9 +6,9 @@ Author URI: https://shop.webaware.com.au/
 Donate link: https://shop.webaware.com.au/donations/?donation_for=Minimum+Age+for+WooCommerce
 Tags: woocommerce, checkout, age
 Requires at least: 4.2
-Tested up to: 5.4
+Tested up to: 5.5
 Requires PHP: 5.6
-Stable tag: 1.0.11
+Stable tag: 1.0.12
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -56,17 +56,16 @@ WooCommerce > Settings > Minimum Age > Date layout
 
 ## Upgrade Notice
 
-### 1.0.11
+### 1.0.12
 
-marked as tested up to WooCommerce 4.3; added filter hook `mininum_age_woo_checkout_hook`
+marked as tested up to WooCommerce 4.4
 
 ## Changelog
 
 The full changelog can be found [on GitHub](https://github.com/webaware/minimum-age-woocommerce/blob/master/changelog.md). Recent entries:
 
-### 1.0.11
+### 1.0.12
 
-Released 2020-07-11
+Released 2020-08-12
 
-* changed: marked as tested up to WooCommerce 4.3
-* added: filter hook `mininum_age_woo_checkout_hook` allowing developers to change where the fields show in the checkout
+* changed: marked as tested up to WooCommerce 4.4

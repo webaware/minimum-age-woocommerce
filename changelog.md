@@ -1,5 +1,9 @@
 # Minimum Age for WooCommerce
 
+### 1.0.12, 2020-08-12
+
+* changed: marked as tested up to WooCommerce 4.4
+
 ### 1.0.11, 2020-07-11
 
 * changed: marked as tested up to WooCommerce 4.3
