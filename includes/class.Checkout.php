@@ -220,10 +220,9 @@ class Checkout {
 
 		$dob = get_post_meta($order->get_id(), self::FIELD_AGE, true);
 		if ($dob) {
-			$dob = strtotime($dob);
 			$keys[self::FIELD_AGE] = [
 				'label'		=> _x('Date of birth', 'order email field label', 'minimum-age-woocommerce'),
-				'value'		=> date(_x('jS F, Y', 'order email date format', 'minimum-age-woocommerce'), $dob),
+				'value'		=> format_date_of_birth($dob),
 			];
 		}
 
@@ -237,7 +236,7 @@ class Checkout {
 	public function showInAdmin($order) {
 		$dob = get_post_meta($order->get_id(), self::FIELD_AGE, true);
 		if ($dob) {
-			$dob = date(_x('jS F, Y', 'admin date format', 'minimum-age-woocommerce'), strtotime($dob));
+			$dob = format_date_of_birth($dob);
 			printf('<p><strong>%s</strong>: %s</p>', esc_html_x('Date of birth', 'admin field label', 'minimum-age-woocommerce'), esc_html($dob));
 		}
 	}

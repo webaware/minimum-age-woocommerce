@@ -44,3 +44,13 @@ function get_posted_string($name) {
 
 	return isset($posted[$name]) ? sanitize_text_field($posted[$name]) : false;
 }
+
+/**
+ * format the birthday for display
+ * @param string $dob
+ * @return string
+ */
+function format_date_of_birth($dob) {
+	$dob = strtotime($dob);
+	return date_i18n(_x('jS F, Y', 'order email date format', 'minimum-age-woocommerce'), $dob);
+}

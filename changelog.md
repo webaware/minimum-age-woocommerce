@@ -1,5 +1,9 @@
 # Minimum Age for WooCommerce
 
+### 1.0.13, 2020-11-13
+
+* fixed: formatted birthdates were not being translated
+
 ### 1.0.12, 2020-08-12
 
 * changed: marked as tested up to WooCommerce 4.4
