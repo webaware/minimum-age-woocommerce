@@ -3,6 +3,7 @@
 ### 1.0.13, 2020-11-13
 
 * fixed: formatted birthdates were not being translated
+* changed: marked as tested up to WooCommerce 4.7
 
 ### 1.0.12, 2020-08-12
 
