@@ -2,9 +2,10 @@
 <ruleset name="PHP_CodeSniffer">
 	<description>Some basic coding standards sniffs for this project.</description>
 
-	<file>minimum-age-woocommerce.php</file>
-	<file>includes</file>
-	<file>views</file>
+	<file>.</file>
+	<exclude-pattern>node_modules/</exclude-pattern>
+	<exclude-pattern>vendor/</exclude-pattern>
+	<exclude-pattern>\.wordpress.org/</exclude-pattern>
 
 	<arg name="basepath" value="." />
 	<arg name="colors" />
