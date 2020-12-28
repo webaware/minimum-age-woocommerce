@@ -90,6 +90,24 @@ class Settings extends \WC_Settings_Page {
 			],
 
 			[
+				'id' 				=> SETTING_EMAILS_ADMIN,
+				'title' 			=> _x('Options', 'settings page', 'minimum-age-woocommerce'),
+				'desc' 				=> __("add customer's age to admin emails", 'minimum-age-woocommerce'),
+				'type' 				=> 'checkbox',
+				'checkboxgroup'		=> 'start',
+				'default'			=> get_setting_default(SETTING_EMAILS_ADMIN),
+			],
+
+			[
+				'id' 				=> SETTING_EMAILS_CUSTOMER,
+				'title' 			=> _x('Options', 'settings page', 'minimum-age-woocommerce'),
+				'desc' 				=> __("add customer's age to customer emails", 'minimum-age-woocommerce'),
+				'type' 				=> 'checkbox',
+				'checkboxgroup'		=> 'end',
+				'default'			=> get_setting_default(SETTING_EMAILS_CUSTOMER),
+			],
+
+			[
 				'id'				=> 'min_age_woo_settings',
 				'type'				=> 'sectionend',
 			],

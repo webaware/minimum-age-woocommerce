@@ -214,6 +214,11 @@ class Checkout {
 	* @return array
 	*/
 	public function showInEmails($keys, $sent_to_admin, $order) {
+		$option_enable = $sent_to_admin ? SETTING_EMAILS_ADMIN : SETTING_EMAILS_CUSTOMER;
+		if (get_option($option_enable, get_setting_default($option_enable)) !== 'yes') {
+			return;
+		}
+
 		if (is_numeric($order)) {
 			$order = wc_get_order($order);
 		}

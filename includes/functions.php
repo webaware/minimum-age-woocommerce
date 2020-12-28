@@ -25,6 +25,10 @@ function get_setting_default($setting) {
 		case SETTING_ERROR_UNDER_AGE:
 			return __('You may not place an order on this shop if you are under {{age}}.', 'minimum-age-woocommerce');
 
+		case SETTING_EMAILS_ADMIN:
+		case SETTING_EMAILS_CUSTOMER:
+			return 'yes';
+
 	}
 
 	return '';

@@ -14,6 +14,8 @@ const SETTING_CHECKOUT_DESCRIPTION	= 'min_age_woo_checkout_description';
 const SETTING_ERROR_UNDER_AGE		= 'min_age_woo_error_under_age';
 const SETTING_MIN_AGE				= 'min_age_woo_min_age';
 const SETTING_DATE_LAYOUT			= 'min_age_woo_date_layout';
+const SETTING_EMAILS_ADMIN			= 'min_age_woo_emails_admin';
+const SETTING_EMAILS_CUSTOMER		= 'min_age_woo_emails_cust';
 
 /**
 * kick start the plugin
