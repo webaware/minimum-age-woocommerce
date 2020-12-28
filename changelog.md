@@ -1,5 +1,10 @@
 # Minimum Age for WooCommerce
 
+### 1.0.14, soon...
+
+* added: settings to enable/disable showing the customer's age in order emails
+* changed: marked as tested up to WooCommerce 4.9
+
 ### 1.0.13, 2020-11-13
 
 * fixed: formatted birthdates were not being translated
