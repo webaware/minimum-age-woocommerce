@@ -100,7 +100,6 @@ class Settings extends \WC_Settings_Page {
 
 			[
 				'id' 				=> SETTING_EMAILS_CUSTOMER,
-				'title' 			=> _x('Options', 'settings page', 'minimum-age-woocommerce'),
 				'desc' 				=> __("add customer's age to customer emails", 'minimum-age-woocommerce'),
 				'type' 				=> 'checkbox',
 				'checkboxgroup'		=> 'end',
