@@ -56,5 +56,6 @@ function get_posted_string($name) {
  */
 function format_date_of_birth($dob) {
 	$dob = strtotime($dob);
-	return date_i18n(_x('jS F, Y', 'order email date format', 'minimum-age-woocommerce'), $dob);
+	$format = _x('jS F, Y', 'order email date format', 'minimum-age-woocommerce');
+	return function_exists('wp_date') ? wp_date($format, $dob) : date_i18n($format, $dob);
 }
