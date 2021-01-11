@@ -1,6 +1,6 @@
 # Minimum Age for WooCommerce
 
-### 1.0.14, soon...
+### 1.0.14, 2021-01-11
 
 * added: settings to enable/disable showing the customer's age in order emails
 * changed: prefer `wp_date()` function when it is available

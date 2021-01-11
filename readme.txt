@@ -8,7 +8,7 @@ Tags: woocommerce, checkout, age
 Requires at least: 4.2
 Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 1.0.13
+Stable tag: 1.0.14
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -56,17 +56,18 @@ WooCommerce > Settings > Minimum Age > Date layout
 
 ## Upgrade Notice
 
-### 1.0.13
+### 1.0.14
 
-Formatted birthdates are now correctly translated; tested up to WooCommerce 4.7
+add settings to enable/disable showing the customer's age in order emails; prefer wp_date() function when it is available; tested up to WooCommerce 4.9
 
 ## Changelog
 
 The full changelog can be found [on GitHub](https://github.com/webaware/minimum-age-woocommerce/blob/master/changelog.md). Recent entries:
 
-### 1.0.13
+### 1.0.14
 
-Released 2020-11-13
+Released 2021-01-11
 
-* fixed: formatted birthdates were not being translated
-* changed: marked as tested up to WooCommerce 4.7
+* added: settings to enable/disable showing the customer's age in order emails
+* changed: prefer `wp_date()` function when it is available
+* changed: marked as tested up to WooCommerce 4.9
