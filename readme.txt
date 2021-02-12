@@ -8,7 +8,7 @@ Tags: woocommerce, checkout, age
 Requires at least: 4.2
 Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 1.0.14
+Stable tag: 1.0.15
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -56,18 +56,16 @@ WooCommerce > Settings > Minimum Age > Date layout
 
 ## Upgrade Notice
 
-### 1.0.14
+### 1.0.15
 
-add settings to enable/disable showing the customer's age in order emails; prefer wp_date() function when it is available; tested up to WooCommerce 4.9
+marked as tested up to WooCommerce 5.0
 
 ## Changelog
 
 The full changelog can be found [on GitHub](https://github.com/webaware/minimum-age-woocommerce/blob/master/changelog.md). Recent entries:
 
-### 1.0.14
+### 1.0.15
 
-Released 2021-01-11
+Released 2021-02-12
 
-* added: settings to enable/disable showing the customer's age in order emails
-* changed: prefer `wp_date()` function when it is available
-* changed: marked as tested up to WooCommerce 4.9
+* changed: marked as tested up to WooCommerce 5.0
