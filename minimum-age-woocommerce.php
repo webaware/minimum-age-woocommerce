@@ -8,7 +8,7 @@ Author: WebAware
 Author URI: https://shop.webaware.com.au/
 Text Domain: minimum-age-woocommerce
 WC requires at least: 3.0
-WC tested up to: 5.0
+WC tested up to: 5.1
 */
 
 /*
