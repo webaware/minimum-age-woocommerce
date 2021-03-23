@@ -1,6 +1,8 @@
 <?php
 namespace webaware\min_age_woo;
 
+use DateTimeZone;
+
 if (!defined('ABSPATH')) {
 	exit;
 }
@@ -55,7 +57,7 @@ function get_posted_string($name) {
  * @return string
  */
 function format_date_of_birth($dob) {
-	$dob = strtotime($dob);
+	$time = strtotime($dob);
 	$format = _x('jS F, Y', 'order email date format', 'minimum-age-woocommerce');
-	return function_exists('wp_date') ? wp_date($format, $dob) : date_i18n($format, $dob);
+	return function_exists('wp_date') ? wp_date($format, $time, new DateTimeZone('UTC')) : date_i18n($format, $time);
 }
