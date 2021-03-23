@@ -2,5 +2,6 @@
 /.vscode
 /.dist
 /.wordpress.org
+/bin
 /node_modules
 /vendor
