@@ -1,5 +1,9 @@
 # Minimum Age for WooCommerce
 
+### 1.0.16, 2021-03-23
+
+* fixed: date of birth in emails was one day behind for timezones behind UTC
+
 ### 1.0.15, 2021-02-12
 
 * changed: marked as tested up to WooCommerce 5.0
