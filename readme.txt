@@ -6,9 +6,9 @@ Author URI: https://shop.webaware.com.au/
 Donate link: https://shop.webaware.com.au/donations/?donation_for=Minimum+Age+for+WooCommerce
 Tags: woocommerce, checkout, age
 Requires at least: 4.2
-Tested up to: 5.6
+Tested up to: 5.7
 Requires PHP: 5.6
-Stable tag: 1.0.15
+Stable tag: 1.0.16
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -56,16 +56,17 @@ WooCommerce > Settings > Minimum Age > Date layout
 
 ## Upgrade Notice
 
-### 1.0.15
+### 1.0.16
 
-marked as tested up to WooCommerce 5.0
+fixed date of birth in emails for timezones behind UTC; marked as tested up to WooCommerce 5.1
 
 ## Changelog
 
 The full changelog can be found [on GitHub](https://github.com/webaware/minimum-age-woocommerce/blob/master/changelog.md). Recent entries:
 
-### 1.0.15
+### 1.0.16
 
-Released 2021-02-12
+Released 2021-03-23
 
-* changed: marked as tested up to WooCommerce 5.0
+* fixed: date of birth in emails was one day behind for timezones behind UTC
+* changed: marked as tested up to WooCommerce 5.1
