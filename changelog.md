@@ -1,5 +1,10 @@
 # Minimum Age for WooCommerce
 
+### 1.0.17, 2022-06-26
+
+* fixed: was breaking the `woocommerce_email_order_meta_fields` filter hook for other plugins
+* changed: marked as tested up to WooCommerce 6.6
+
 ### 1.0.16, 2021-03-23
 
 * fixed: date of birth in emails was one day behind for timezones behind UTC

@@ -3,16 +3,16 @@
 Plugin Name: Minimum Age for WooCommerce
 Plugin URI: https://shop.webaware.com.au/downloads/minimum-age-for-woocommerce/
 Description: Restrict purchase through the WooCommerce checkout by age
-Version: 1.0.16
+Version: 1.0.17
 Author: WebAware
 Author URI: https://shop.webaware.com.au/
 Text Domain: minimum-age-woocommerce
 WC requires at least: 3.0
-WC tested up to: 5.1
+WC tested up to: 6.6
 */
 
 /*
-copyright (c) 2018-2021 WebAware Pty Ltd (email : support@webaware.com.au)
+copyright (c) 2018-2022 WebAware Pty Ltd (email : support@webaware.com.au)
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -37,7 +37,7 @@ define('MIN_AGE_WOO_FILE', __FILE__);
 define('MIN_AGE_WOO_ROOT', dirname(__FILE__) . '/');
 define('MIN_AGE_WOO_NAME', basename(dirname(__FILE__)) . '/' . basename(__FILE__));
 define('MIN_AGE_WOO_MIN_PHP', '5.6');
-define('MIN_AGE_WOO_VERSION', '1.0.16');
+define('MIN_AGE_WOO_VERSION', '1.0.17');
 
 require MIN_AGE_WOO_ROOT . 'includes/functions-global.php';
 require MIN_AGE_WOO_ROOT . 'includes/class.Requires.php';
