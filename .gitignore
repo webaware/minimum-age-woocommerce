@@ -1,6 +1,7 @@
 /.svn
 /.vscode
 /.dist
+/.phpunit.result.cache
 /.wordpress.org
 /bin
 /node_modules
