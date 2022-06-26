@@ -58,7 +58,7 @@ class Checkout {
 			$ver = SCRIPT_DEBUG ? time() : MIN_AGE_WOO_VERSION;
 
 			$stylesheets['minimum-age-woocommerce'] = [
-				'src'		=> plugins_url('css/checkout.css', MIN_AGE_WOO_FILE),
+				'src'		=> plugins_url('static/css/checkout.css', MIN_AGE_WOO_FILE),
 				'deps'		=> '',
 				'media'		=> 'all',
 				'version'	=> $ver,

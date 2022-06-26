@@ -3,12 +3,12 @@
 		"phpcompatibility/php-compatibility": "*",
 		"squizlabs/php_codesniffer": "*",
 		"dealerdirect/phpcodesniffer-composer-installer": "*",
-		"phpunit/phpunit": "^7"
+		"yoast/wp-test-utils": "^1.0"
 	},
-	"scripts": {
-		"lint": "find . -path ./vendor -prune -o -path ./node_modules -prune -o -path './.*' -prune -o -name '*.php' -exec php -l '{}' \\; >/dev/null",
-		"sniff": "phpcs -ps && phpcs -ps --standard=phpcs-5.2.xml",
-		"test-plugin": "phpunit"
-	},
-	"prefer-stable" : true
+	"prefer-stable" : true,
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
 }
