@@ -17,7 +17,7 @@ all:
 
 zip: $(ZIP)
 
-$(ZIP): $(SRC_PHP) static/images/* static/css/* *.md *.txt
+$(ZIP): $(SRC_PHP) static/css/* *.md *.txt
 	rm -rf .dist
 	mkdir .dist
 	git archive HEAD --prefix=$(PKG_NAME)/ --format=zip -9 -o $(ZIP)
