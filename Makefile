@@ -43,7 +43,7 @@ lint-php:
 # tests
 
 test: /tmp/wordpress-tests-lib
-	php8.0 vendor/bin/phpunit
+	php8.1 vendor/bin/phpunit
 
 /tmp/wordpress-tests-lib:
 	bin/install-wp-tests.sh wp_test website website localhost nightly
