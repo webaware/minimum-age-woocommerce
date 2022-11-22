@@ -18,9 +18,9 @@ const SETTING_EMAILS_ADMIN			= 'min_age_woo_emails_admin';
 const SETTING_EMAILS_CUSTOMER		= 'min_age_woo_emails_cust';
 
 /**
-* kick start the plugin
-*/
-add_action('plugins_loaded', function () {
+ * kick start the plugin
+ */
+add_action('after_setup_theme', function () {
 	require MIN_AGE_WOO_ROOT . 'includes/functions.php';
 	require MIN_AGE_WOO_ROOT . 'includes/class.Plugin.php';
 	Plugin::getInstance()->pluginStart();

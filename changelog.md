@@ -1,5 +1,9 @@
 # Minimum Age for WooCommerce
 
+### 1.0.18, soon...
+
+* fixed: filter hook `mininum_age_woo_checkout_hook` did not work from themes, only from plugins
+
 ### 1.0.17, 2022-06-26
 
 * fixed: was breaking the `woocommerce_email_order_meta_fields` filter hook for other plugins
