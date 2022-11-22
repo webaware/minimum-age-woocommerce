@@ -1,6 +1,6 @@
 # Minimum Age for WooCommerce
 
-### 1.0.18, soon...
+### 1.0.18, 2022-11-22
 
 * fixed: filter hook `mininum_age_woo_checkout_hook` did not work from themes, only from plugins
 
