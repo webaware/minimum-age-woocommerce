@@ -73,6 +73,11 @@ class Checkout {
 	public function showQuestion() {
 		$checkout		= WC()->checkout();
 
+		// allow hookers to suppress question, e.g. depending on what products are in the checkout
+		if (!apply_filters('mininum_age_woo_show_question', true)) {
+			return;
+		}
+
 		$this_year		= (int) date('Y');
 		$title			= get_option(SETTING_CHECKOUT_TITLE, get_setting_default(SETTING_CHECKOUT_TITLE));
 		$description	= get_option(SETTING_CHECKOUT_DESCRIPTION, get_setting_default(SETTING_CHECKOUT_DESCRIPTION));
