@@ -38,14 +38,23 @@ class Checkout {
 	* add hooks to manage checkout interactions
 	*/
 	public function addHooks() {
-		$question_hook = apply_filters('mininum_age_woo_checkout_hook', 'woocommerce_checkout_before_customer_details');
-
-		add_action($question_hook, [$this, 'showQuestion']);
-		add_action('woocommerce_checkout_process', [$this, 'confirmAge']);
-		add_action('woocommerce_checkout_update_order_meta', [$this, 'saveAge']);
+		add_action('wp_loaded', [$this, 'addCheckoutHooks']);
 		add_action('woocommerce_email_order_meta_fields', [$this, 'showInEmails'], 10, 3);
 		add_action('woocommerce_admin_order_data_after_billing_address', [$this, 'showInAdmin']);
-		add_filter('woocommerce_enqueue_styles', [$this, 'enqueueStyles']);
+	}
+
+	/**
+	* add checkout processing hooks
+	*/
+	public function addCheckoutHooks() {
+		// allow hookers to suppress question, e.g. depending on what products are in the checkout
+		if (apply_filters('mininum_age_woo_show_question', true)) {
+			$question_hook = apply_filters('mininum_age_woo_checkout_hook', 'woocommerce_checkout_before_customer_details');
+			add_action($question_hook, [$this, 'showQuestion']);
+			add_action('woocommerce_checkout_process', [$this, 'confirmAge']);
+			add_action('woocommerce_checkout_update_order_meta', [$this, 'saveAge']);
+			add_filter('woocommerce_enqueue_styles', [$this, 'enqueueStyles']);
+		}
 	}
 
 	/**
