@@ -6,9 +6,9 @@ Author URI: https://shop.webaware.com.au/
 Donate link: https://shop.webaware.com.au/donations/?donation_for=Minimum+Age+for+WooCommerce
 Tags: woocommerce, checkout, age
 Requires at least: 4.2
-Tested up to: 6.1
+Tested up to: 6.4
 Requires PHP: 5.6
-Stable tag: 1.0.18
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -56,16 +56,18 @@ WooCommerce > Settings > Minimum Age > Date layout
 
 ## Upgrade Notice
 
-### 1.0.18
+### 1.1.0
 
-filter hook `mininum_age_woo_checkout_hook` now works from themes as well as plugins
+supports WooCommerce HPOS (high performance order storage); adds filter hook mininum_age_woo_show_question; tested to WooCommerce 8.2
 
 ## Changelog
 
 The full changelog can be found [on GitHub](https://github.com/webaware/minimum-age-woocommerce/blob/master/changelog.md). Recent entries:
 
-### 1.0.18
+### 1.1.0
 
-Released 2022-11-22
+Released 2023-10-31
 
-* fixed: filter hook `mininum_age_woo_checkout_hook` did not work from themes, only from plugins
+* fixed: support for WooCommerce HPOS (high performance order storage)
+* added: filter hook `mininum_age_woo_show_question` allowing hookers to conditionally suppress the age question
+* changed: marked as tested up to WooCommerce 8.2

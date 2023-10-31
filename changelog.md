@@ -1,6 +1,6 @@
 # Minimum Age for WooCommerce
 
-### 1.1.0, soon...
+### 1.1.0, 2023-10-31
 
 * fixed: support for WooCommerce HPOS (high performance order storage)
 * added: filter hook `mininum_age_woo_show_question` allowing hookers to conditionally suppress the age question
