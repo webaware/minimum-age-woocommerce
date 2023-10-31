@@ -49,6 +49,10 @@ The default order of the birth date fields is day, month, year. You can choose a
 
 WooCommerce > Settings > Minimum Age > Date layout
 
+### Can I show the date of birth question conditionally?
+
+There is a filter hook `mininum_age_woo_show_question` that allows developers to hide the date of birth question if it isn't required, e.g. only show for products in certain categories. It accepts a single boolean parameter, and returns a boolean: true to show the question, otherwise false.
+
 ## Screenshots
 
 1. WooCommerce settings
