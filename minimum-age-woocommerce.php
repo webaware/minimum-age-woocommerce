@@ -33,6 +33,7 @@ if (!defined('ABSPATH')) {
 	exit;
 }
 
+// phpcs:disable Modernize.FunctionCalls.Dirname.FileConstant
 define('MIN_AGE_WOO_FILE', __FILE__);
 define('MIN_AGE_WOO_ROOT', dirname(__FILE__) . '/');
 define('MIN_AGE_WOO_NAME', basename(dirname(__FILE__)) . '/' . basename(__FILE__));

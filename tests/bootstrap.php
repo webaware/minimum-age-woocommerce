@@ -23,8 +23,7 @@ tests_add_filter('muplugins_loaded', function() use ($plugin_main_file) {
 	require $plugin_main_file;
 
 	// load other plugins we require when testing
-	$plugin_dir = dirname(dirname(__DIR__));
-	require "$plugin_dir/woocommerce/woocommerce.php";
+	require WP_PLUGIN_DIR . '/woocommerce/woocommerce.php';
 });
 
 /*
