@@ -1,17 +1,17 @@
-PKG_NAME			= minimum-age-woocommerce
-PKG_VERSION			= $(shell sed -rn 's/^Version: (.*)/\1/p' $(PKG_NAME).php)
+PKG_NAME			:= minimum-age-woocommerce
+PKG_VERSION			:= $(shell sed -rn 's/^Version: (.*)/\1/p' $(PKG_NAME).php)
 
-ZIP					= .dist/$(PKG_NAME)-$(PKG_VERSION).zip
-FIND_PHP			= find . -path ./vendor -prune -o -path ./node_modules -prune -o -path './.*' -o -name '*.php'
-LINT_PHP			= $(FIND_PHP) -exec php -l '{}' \; >/dev/null
-SNIFF_PHP			= vendor/bin/phpcs -ps
-SNIFF_PHP_5			= $(SNIFF_PHP) --standard=phpcs-5.2.xml
-SRC_PHP				= $(shell $(FIND_PHP) -print)
+ZIP					:= .dist/$(PKG_NAME)-$(PKG_VERSION).zip
+FIND_PHP			:= find . -path ./vendor -prune -o -path ./node_modules -prune -o -path './.*' -o -name '*.php'
+LINT_PHP			:= $(FIND_PHP) -exec php -l '{}' \; >/dev/null
+SNIFF_PHP			:= vendor/bin/phpcs -ps
+SNIFF_PHP_5			:= $(SNIFF_PHP) --standard=phpcs-5.2.xml
+SRC_PHP				:= $(shell $(FIND_PHP) -print)
+
+.PHONY: all lint lint-php test zip wpsvn
 
 all:
 	@echo please see Makefile for available builds / commands
-
-.PHONY: all lint lint-php test zip wpsvn
 
 # release product
 
@@ -36,13 +36,16 @@ lint: lint-php
 
 lint-php:
 	@echo PHP lint...
-	@$(LINT_PHP)
-	@$(SNIFF_PHP)
-	@$(SNIFF_PHP_5)
+	@$(FIND_PHP) -exec php7.3 -l '{}' \; >/dev/null
+	@vendor/bin/phpcs -ps
+	@vendor/bin/phpcs -ps --standard=phpcs-5.2.xml
 
 # tests
 
-test: test-php74 test-php80 test-php81
+test: test-php73 test-php80 test-php81
+
+test-php73: /tmp/wordpress-tests-lib
+	php7.3 vendor/bin/phpunit
 
 test-php74: /tmp/wordpress-tests-lib
 	php7.4 vendor/bin/phpunit

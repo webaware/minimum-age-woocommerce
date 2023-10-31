@@ -3,7 +3,8 @@
 		"phpcompatibility/php-compatibility": "*",
 		"squizlabs/php_codesniffer": "*",
 		"dealerdirect/phpcodesniffer-composer-installer": "*",
-		"yoast/wp-test-utils": "^1.0"
+		"yoast/wp-test-utils": "^1.0",
+		"phpcsstandards/phpcsextra": "^1.1"
 	},
 	"prefer-stable" : true,
 	"config": {
