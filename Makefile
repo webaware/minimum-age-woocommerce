@@ -8,6 +8,9 @@ SNIFF_PHP			:= vendor/bin/phpcs -ps
 SNIFF_PHP_5			:= $(SNIFF_PHP) --standard=phpcs-5.2.xml
 SRC_PHP				:= $(shell $(FIND_PHP) -print)
 
+# environment variables for unit tests
+export WP_PLUGIN_DIR	= $(shell cd ..; pwd)
+
 .PHONY: all lint lint-php test zip wpsvn
 
 all:
