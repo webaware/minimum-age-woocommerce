@@ -51,7 +51,7 @@ WooCommerce > Settings > Minimum Age > Date layout
 
 ### Can I show the date of birth question conditionally?
 
-There is a filter hook `mininum_age_woo_show_question` that allows developers to hide the date of birth question if it isn't required, e.g. only show for products in certain categories. It accepts a single boolean parameter, and returns a boolean: true to show the question, otherwise false.
+There is a filter hook `minimum_age_woo_show_question` that allows developers to hide the date of birth question if it isn't required, e.g. only show for products in certain categories. It accepts a single boolean parameter, and returns a boolean: true to show the question, otherwise false.
 
 ## Screenshots
 
@@ -73,5 +73,5 @@ The full changelog can be found [on GitHub](https://github.com/webaware/minimum-
 Released 2023-10-31
 
 * fixed: support for WooCommerce HPOS (high performance order storage)
-* added: filter hook `mininum_age_woo_show_question` allowing hookers to conditionally suppress the age question
+* added: filter hook `minimum_age_woo_show_question` allowing hookers to conditionally suppress the age question
 * changed: marked as tested up to WooCommerce 8.2

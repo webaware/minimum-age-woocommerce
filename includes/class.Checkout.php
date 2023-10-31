@@ -48,7 +48,7 @@ class Checkout {
 	*/
 	public function addCheckoutHooks() {
 		// allow hookers to suppress question, e.g. depending on what products are in the checkout
-		if (apply_filters('mininum_age_woo_show_question', true)) {
+		if (apply_filters('minimum_age_woo_show_question', true)) {
 			$question_hook = apply_filters('mininum_age_woo_checkout_hook', 'woocommerce_checkout_before_customer_details');
 			add_action($question_hook, [$this, 'showQuestion']);
 			add_action('woocommerce_checkout_process', [$this, 'confirmAge']);
