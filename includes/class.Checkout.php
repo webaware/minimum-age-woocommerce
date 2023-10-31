@@ -217,7 +217,9 @@ class Checkout {
 		$month		= get_posted_string(self::FIELD_DOB_MONTH);
 		$year		= get_posted_string(self::FIELD_DOB_YEAR);
 		$dob		= mktime(0, 0, 0, $month, $day, $year);
-		update_post_meta($order_id, self::FIELD_AGE, date('Y-m-d', $dob));
+		$order		= wc_get_order($order_id);
+		$order->update_meta_data(self::FIELD_AGE, date('Y-m-d', $dob));
+		$order->save_meta_data();
 	}
 
 	/**
@@ -237,7 +239,7 @@ class Checkout {
 			$order = wc_get_order($order);
 		}
 
-		$dob = get_post_meta($order->get_id(), self::FIELD_AGE, true);
+		$dob = $order->get_meta(self::FIELD_AGE, true);
 		if ($dob) {
 			$keys[self::FIELD_AGE] = [
 				'label'		=> _x('Date of birth', 'order email field label', 'minimum-age-woocommerce'),
@@ -253,7 +255,7 @@ class Checkout {
 	* @param WC_Order $order
 	*/
 	public function showInAdmin($order) {
-		$dob = get_post_meta($order->get_id(), self::FIELD_AGE, true);
+		$dob = $order->get_meta(self::FIELD_AGE, true);
 		if ($dob) {
 			$dob = format_date_of_birth($dob);
 			printf('<p><strong>%s</strong>: %s</p>', esc_html_x('Date of birth', 'admin field label', 'minimum-age-woocommerce'), esc_html($dob));

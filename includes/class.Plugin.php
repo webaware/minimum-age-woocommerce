@@ -1,7 +1,9 @@
 <?php
 namespace webaware\min_age_woo;
 
-use \MinAgeWooRequires as Requires;
+use MinAgeWooRequires as Requires;
+
+use Automattic\WooCommerce\Utilities\FeaturesUtil;
 
 if (!defined('ABSPATH')) {
 	exit;
@@ -43,10 +45,22 @@ class Plugin {
 			return;
 		}
 
+		// register support for HPOS
+		add_action('before_woocommerce_init', [$this, 'declareCompatibleHPOS']);
+
 		require_once MIN_AGE_WOO_ROOT . 'includes/class.Checkout.php';
 		Checkout::getInstance()->addHooks();
 
 		add_filter('woocommerce_get_settings_pages', [$this, 'wooGetSettingsPages']);
+	}
+
+	/**
+	 * declare compatibility with HPOS (high performance order storage, i.e. custom tables)
+	 */
+	public function declareCompatibleHPOS() {
+		if (class_exists(FeaturesUtil::class)) {
+			FeaturesUtil::declare_compatibility('custom_order_tables', MIN_AGE_WOO_FILE, true);
+		}
 	}
 
 	/**
